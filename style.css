@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 500px;
+    height: 300px;
+    border-top: 1px solid silver;
+    border-left: 1px solid silver;
+    border-radius: 10px;
+    cursor: pointer;
+    backdrop-filter: blur(7px);
+    box-shadow: 5px 5px 5px rgba(50, 50,50,0.5);
+}
+
+.visa{
+    width: 80px;
+    height: 80px;
+    background: url("visa.jpg");
+    filter: brightness(0.8);
+    background-size: cover;
+    position: relative;
+    top: 10px;
+    left: 380px;
+}
+
+.chip{
+    width: 50px;
+    height: 50px;
+    background: url("chip.png");
+    background-size: cover;
+    position: relative;
+    top: 10px;
+    left: 25px;
+}
+
+.card-number::before{
+
+    content: "1234 4560 6787 8989";
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 40px;
+    left: 48px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 25px;
+    letter-spacing: 4px;
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: 1px 1px 8px;
+
+}
+
+.meta{
+    display: flex;
+    width: 370px;
+    justify-content: space-between;
+}
+
+.name::before{
+    content: "Indradhanush K";
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 80px;
+    left: 40px;
+    font-family: 'Times New Roman', Times, serif';
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: rgba(255, 255, 255,0.7);
+
+}
+
+.exp-date::before{
+
+    content: "07/26";
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 80px;
+    left: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+    color: rgba(255,255,255,0.7);
+
+}
